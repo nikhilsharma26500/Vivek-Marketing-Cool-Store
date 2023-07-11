@@ -1,9 +1,13 @@
+import { Modal } from "@/components/ui/modal";
+import { UserButton } from "@clerk/nextjs";
 
 
 const SetupPage = () => {
     return (
       <>
-        <h1>This is a protected route</h1>
+        <Modal title="Test" description="Test Description" isOpen onClose={() => {}}>
+          Children
+        </Modal>
       </>
     )
   }
